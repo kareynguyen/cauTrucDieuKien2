@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = Number.parseFloat(prompt('Nhập số a: '));
+    let b = Number.parseFloat(prompt('Nhập số b: '));
+    if (a == 0){
+        if (b == 0){
+            alert('Phương trình vô số nghiệm');
+        }else {
+            alert('Phương trình vô nghiệm');
+        }
+    }
+    if (a > 0 || a < 0){
+        alert('Phương trình có nghiệm duy nhất là ' + -b/a)
+    }
+</script>
+</body>
+</html>

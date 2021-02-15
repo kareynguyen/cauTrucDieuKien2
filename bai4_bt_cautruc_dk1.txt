@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let a = Number.parseFloat(prompt('Nhập vào số a: ')),
+        b = Number.parseFloat(prompt('Nhập vào số b: ')),
+        c = Number.parseFloat(prompt('Nhập vào số c: '));
+
+    if(a > b){
+        if (a > c){
+            alert(a + ' là số lớn nhất');
+        }else {
+            alert(c + ' là số lớn nhất');
+        }
+    }
+    if (a < b){
+        if (b < c){
+            alert(c + ' là số lớn nhất');
+        }else {
+            alert(b + ' là số lớn nhất');
+        }
+    }
+</script>
+</body>
+</html>

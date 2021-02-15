@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let used = Number.parseFloat(prompt('Nhập lượng điện tiêu thụ: '));
+    if (used > 10){
+        document.write('Số tiền điện phải trả là: ' + used * 1000 + ' VND')
+    }else if (used > 6){
+        document.write('Số tiền điện phải trả là: ' + used * 2000 + ' VND')
+    }else if (used > 3){
+        document.write('Số tiền điện phải trả là: ' + used * 3000 + ' VND')
+    }else {
+        document.write('Số tiền điện phải trả là: ' + used * 4000 + ' VND')
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tienGui = parseInt(prompt('Nhập vào số tiền gửi: '));
+        thang = parseInt(prompt('Nhập vào số tháng: '));
+        laiSuat = parseFloat(prompt('Nhập vào lãi suất: '));
+
+        tienLaiSau = tienGui * thang * laiSuat / 12;
+        tongTienLai = tienGui + tienLaiSau;
+
+    document.write('Tiền gửi: ' + tienGui + ' VND <br>');
+    document.write('Tháng: ' + thang + ' tháng  <br>');
+    document.write('Lãi suất: ' + laiSuat + ' %  <br>');
+    document.write('Tiền lãi sau: ' + tienLaiSau + ' VND <br>');
+    document.write('Tổng tiền lãi: ' + tongTienLai + ' VND');
+
+</script>
+</body>
+</html>

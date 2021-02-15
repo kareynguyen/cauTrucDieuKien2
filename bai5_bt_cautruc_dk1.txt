@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let kTra = Number.parseFloat(prompt('Nhập vào điểm bài kiểm tra: ')),
+        gKy = Number.parseFloat(prompt('Nhập vào điểm thi giữa kỳ: ')),
+        cKy = Number.parseFloat(prompt('Nhập vào điểm thi cuối kỳ: ')),
+        tong = (kTra + gKy + cKy) / 3;
+
+    if(tong > 9){
+        document.write('Học sinh Xuất Sắc');
+    }else if (tong > 8){
+        document.write('Học sinh Giỏi');
+    }else if (tong > 6.5){
+        document.write('Học sinh Khá');
+    }else {
+        document.write('Học sinh Trung Bình');
+    }
+
+</script>
+</body>
+</html>

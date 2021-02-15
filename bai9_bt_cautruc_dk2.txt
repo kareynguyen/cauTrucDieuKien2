@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = Number.parseFloat(prompt('Nhập số a: ')),
+        b = Number.parseFloat(prompt('Nhập số b: ')),
+        c = Number.parseFloat(prompt('Nhập số c: '));
+
+    if (a && b && c > 0 &&
+        (a +b) > c &&
+        (b +c) > a &&
+        (a +c) > b){
+        alert('Đây là các cạnh của 1 tam giác')
+    }else {
+        alert('Đây không phải là các cạnh của 1 tam giác')
+    }
+</script>
+</body>
+</html>

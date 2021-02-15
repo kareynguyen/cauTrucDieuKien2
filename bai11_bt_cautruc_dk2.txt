@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let luong = Number.parseFloat(prompt('Nhập tiền lương: '))
+    if (luong <= 5000000){
+        document.write('Thuế thu nhập cá nhân phải trả là: ' + 5 * luong /100 + ' VND')
+    }else if (luong <= 10000000){
+        document.write('Thuế thu nhập cá nhân phải trả là: ' + 10 * luong /100 + ' VND')
+    }else if (luong <= 18000000){
+        document.write('Thuế thu nhập cá nhân phải trả là: ' + 15 * luong /100 + ' VND')
+    }else if (luong <= 32000000){
+        document.write('Thuế thu nhập cá nhân phải trả là: ' + 20 * luong /100 + ' VND')
+    }else if (luong <= 52000000){
+        document.write('Thuế thu nhập cá nhân phải trả là: ' + 25 * luong /100 + ' VND')
+    }else if (luong <= 80000000){
+        document.write('Thuế thu nhập cá nhân phải trả là: ' + 30 * luong /100 + ' VND')
+    }else {
+        document.write('Thuế thu nhập cá nhân phải trả là: ' + 35 * luong /100 + ' VND')
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .img1 {
+            width: 400px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img class="img1" id="ka1" onclick="change1()" src="kakashi1.jpg"><br>
+    <img class="img1" id="ka2" onclick="change2()" src="kakashi2.jpg"><br>
+    <img class="img1" id="ka3" onclick="change3()" src="kakashi3.jpg"><br>
+    <img class="img1" id="ka4" onclick="change4()" src="kakashi4.jpg"><br>
+    <img class="img1" id="ka5" onclick="change5()" src="kakashi5.jpg">
+</div>
+
+</body>
+</html>
+<script>
+    function change1() {
+        let anh1 = document.getElementById('ka1').getAttribute('src');
+        if (anh1 === 'kakashi1.jpg') {
+            document.getElementById('ka1').src = "sasuke1.jpg";
+        } else if (anh1 === 'sasuke1.jpg') {
+            document.getElementById('ka1').src = "naruto1.jpg";
+        } else {
+            document.getElementById('ka1').src = "kakashi1.jpg";
+        }
+        check()
+    }
+
+    function change2() {
+        let anh2 = document.getElementById('ka2').getAttribute('src');
+        if (anh2 === 'kakashi2.jpg') {
+            document.getElementById('ka2').src = "sasuke2.jpg";
+        } else if (anh2 === 'sasuke2.jpg') {
+            document.getElementById('ka2').src = "naruto2.jpg";
+        } else {
+            document.getElementById('ka2').src = "kakashi2.jpg";
+        }
+        check()
+    }
+
+    function change3() {
+        let anh3 = document.getElementById('ka3').getAttribute('src');
+        if (anh3 === 'kakashi3.jpg') {
+            document.getElementById('ka3').src = "sasuke3.jpg";
+        } else if (anh3 === 'sasuke3.jpg') {
+            document.getElementById('ka3').src = "naruto3.jpg";
+        } else {
+            document.getElementById('ka3').src = "kakashi3.jpg";
+        }
+        check()
+    }
+
+    function change4() {
+        let anh4 = document.getElementById('ka4').getAttribute('src');
+        if (anh4 === 'kakashi4.jpg') {
+            document.getElementById('ka4').src = "sasuke4.jpg";
+        } else if (anh4 === 'sasuke4.jpg') {
+            document.getElementById('ka4').src = "naruto4.jpg";
+        } else {
+            document.getElementById('ka4').src = "kakashi4.jpg";
+        }
+        check()
+    }
+
+    function change5() {
+        let anh5 = document.getElementById('ka5').getAttribute('src');
+        if (anh5 === 'kakashi5.jpg') {
+            document.getElementById('ka5').src = "sasuke5.jpg";
+        } else if (anh5 === 'sasuke5.jpg') {
+            document.getElementById('ka5').src = "naruto5.jpg";
+        } else {
+            document.getElementById('ka5').src = "kakashi5.jpg";
+        }
+        check()
+    }
+
+    function check() {
+        if (((document.getElementById('ka1').getAttribute('src') === 'kakashi1.jpg') &&
+            (document.getElementById('ka2').getAttribute('src') === 'kakashi2.jpg') &&
+            (document.getElementById('ka3').getAttribute('src') === 'kakashi3.jpg') &&
+            (document.getElementById('ka4').getAttribute('src') === 'kakashi4.jpg') &&
+            (document.getElementById('ka5').getAttribute('src') === 'kakashi5.jpg'))
+            || ((document.getElementById('ka1').getAttribute('src') === 'sasuke1.jpg') &&
+                (document.getElementById('ka2').getAttribute('src') === 'sasuke2.jpg') &&
+                (document.getElementById('ka3').getAttribute('src') === 'sasuke3.jpg') &&
+                (document.getElementById('ka4').getAttribute('src') === 'sasuke4.jpg') &&
+                (document.getElementById('ka5').getAttribute('src') === 'sasuke5.jpg'))
+                || ((document.getElementById('ka1').getAttribute('src') === 'naruto1.jpg') &&
+                    (document.getElementById('ka2').getAttribute('src') === 'naruto2.jpg') &&
+                    (document.getElementById('ka3').getAttribute('src') === 'naruto3.jpg') &&
+                    (document.getElementById('ka4').getAttribute('src') === 'naruto4.jpg') &&
+                    (document.getElementById('ka5').getAttribute('src') === 'naruto5.jpg'))) {
+            alert("You're right!");
+        }
+    }
+
+
+</script>

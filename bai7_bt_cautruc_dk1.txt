@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+let amount = Number.parseInt(prompt('Số tiêu thụ: '));
+
+if (amount > 10){
+    total = amount * 2000;
+    document.write('Cước điện thoại là: ' + total)
+}else if (amount > 6){
+    total = amount * 4000;
+    document.write('Cước điện thoại là: ' + total)
+}else if (amount > 3){
+    total = amount * 6000;
+    document.write('Cước điện thoại là: ' + total)
+}else {
+    total = amount * 8000;
+    document.write('Cước điện thoại là: ' + total)
+}
+</script>
+</body>
+</html>
